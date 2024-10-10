@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,18 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sakaadar"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sakaadar&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sakaadar/Danish_Crown_PRO3.git",
-    "accountId": "522aa944-9848-4865-980e-dba50a6a5ad4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sakaadar/Danish_Crown_PRO3.git&quot;,
+    &quot;accountId&quot;: &quot;522aa944-9848-4865-980e-dba50a6a5ad4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -46,7 +47,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Danish_Crown_client.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Server.executor": "Run",
     "Maven.Danish_Crown_PRO3 [clean].executor": "Run",
     "Maven.Danish_Crown_PRO3 [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -60,7 +63,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Danish_Crown_client">
+    <configuration name="Danish_Crown_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="via.pro3.Client.Danish_Crown_client" />
+      <module name="Danish_Crown_PRO3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="via.pro3.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="via.pro3.Main" />
       <module name="Danish_Crown_PRO3" />
@@ -74,8 +90,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="via.pro3.grpc.Server" />
+      <module name="Danish_Crown_PRO3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="via.pro3.grpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Danish_Crown_client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

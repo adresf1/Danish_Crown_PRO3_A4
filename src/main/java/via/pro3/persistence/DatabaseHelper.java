@@ -30,7 +30,7 @@ public class DatabaseHelper
     public List<Animal> getAllAnimals()
   {
       List<Animal> animals = new ArrayList<>();
-      String query = "SELECT * FROM Animal";
+      String query = "SELECT * FROM \"Danish crown\".animal";
 
       try (Connection connection = getConnection();
           Statement statement = connection.createStatement();
