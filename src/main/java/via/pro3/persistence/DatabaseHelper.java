@@ -7,9 +7,9 @@ import java.sql.*;
 
 public class DatabaseHelper
 {
-  private static final String URL = "jdbc:postgresql://cornelius.db.elephantsql.com:5432/wmofsnqu";
-  private static final String USER = "wmofsnqu";
-  private static final String PASSWORD = "skGjU3q6Rj-7oFMLv3scHqqSPwCTvClr";
+  private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
+  private static final String USER = "postgres";
+  private static final String PASSWORD = "Kika12345";
 
 
   public Connection getConnection() {
@@ -20,8 +20,8 @@ public class DatabaseHelper
       e.printStackTrace();
       return null;
     }
-
   }
+
 
 
 }

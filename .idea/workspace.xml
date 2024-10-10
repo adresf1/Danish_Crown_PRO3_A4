@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/via/pro3/service/Danish_Crown_Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sakaadar"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sakaadar/Danish_Crown_PRO3.git",
+    "accountId": "522aa944-9848-4865-980e-dba50a6a5ad4"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2nFLwCtuXp45tsha7f9iOB3W6pV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Maven.Danish_Crown_PRO3 [clean].executor": "Run",
     "Maven.Danish_Crown_PRO3 [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -53,6 +60,26 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="via.pro3.Main" />
+      <module name="Danish_Crown_PRO3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="via.pro3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728564115102</updated>
       <workItem from="1728564116381" duration="4106000" />
+      <workItem from="1728572447337" duration="1048000" />
     </task>
     <servers />
   </component>
