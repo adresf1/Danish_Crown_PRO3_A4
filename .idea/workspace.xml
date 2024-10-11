@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="Grpc virker med databasen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/Client/Danish_Crown_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Client/Danish_Crown_client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/service/Danish_Crown_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/service/Danish_Crown_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" afterDir="false" />
-    </list>
+    <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="Done pt2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -56,16 +50,33 @@
     "Maven.Danish_Crown_PRO3 [clean].executor": "Run",
     "Maven.Danish_Crown_PRO3 [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sakaa/IdeaProjects/Danish_Crown_PRO3/src/main/database",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21724138",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sakaa\IdeaProjects\Danish_Crown_PRO3\src\main\database" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="via.pro3.service" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Danish_Crown_client">
     <configuration name="Danish_Crown_client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="via.pro3.Client.Danish_Crown_client" />
@@ -141,7 +152,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728582186885</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Done kan hente alle products">
+      <option name="closed" value="true" />
+      <created>1728636161407</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728636161408</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Done">
+      <option name="closed" value="true" />
+      <created>1728637442317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728637442318</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Done pt2">
+      <option name="closed" value="true" />
+      <created>1728637824243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728637824243</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +184,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Grpc virker med databasen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grpc virker med databasen" />
+    <MESSAGE value="Done kan hente alle products" />
+    <MESSAGE value="Done" />
+    <MESSAGE value="Done pt2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done pt2" />
   </component>
 </project>
