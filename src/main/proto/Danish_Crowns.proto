@@ -7,6 +7,7 @@ service Danish_Crown_Impl {
     rpc GetAnimal(animalrequest) returns (animalresponse);
     rpc AddAnimal(animalrequest) returns (animalresponse);
     rpc GetAllAnimals(EmptyMessage) returns (animalListResponse);
+    rpc GetAllProducts(EmptyMessage) returns (productListResponse);
 }
 
 message animalrequest{
@@ -14,6 +15,11 @@ message animalrequest{
     string weight = 2;
     string arrivalDate = 3;
     string status = 4;
+}
+message productrequest{
+    string productid = 1;
+    string packagetype = 2;
+    string animal = 3;
 }
 message EmptyMessage {
 
@@ -26,7 +32,19 @@ message animalresponse {
     string status = 4;
     string message = 5; // Besked som kan indikere succes eller fejl
 }
+
+message productsresponse{
+    string productid = 1;
+    string packagetype = 2;
+    string animal = 3;
+    string message = 5; // Besked som kan indikere succes eller fejl
+}
+
 message animalListResponse {
     repeated animalrequest animals = 1; // 'repeated' bruges til at definere en liste
     string message = 2; // Ekstra statusbesked
+}
+
+message productListResponse {
+    repeated productrequest products = 1;
 }

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="Grpc virker med databasen">
+      <change afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/Client/Danish_Crown_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Client/Danish_Crown_client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/service/Danish_Crown_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/service/Danish_Crown_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +133,22 @@
       <workItem from="1728564116381" duration="4106000" />
       <workItem from="1728572447337" duration="1048000" />
     </task>
+    <task id="LOCAL-00001" summary="Grpc virker med databasen">
+      <option name="closed" value="true" />
+      <created>1728582186885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728582186885</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Grpc virker med databasen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grpc virker med databasen" />
   </component>
 </project>

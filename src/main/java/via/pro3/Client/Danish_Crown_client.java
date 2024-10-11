@@ -2,10 +2,7 @@ package via.pro3.Client;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import via.pro3.Danish_Crown_PRO3.grpc.Danish_Crown_ImplGrpc;
-import via.pro3.Danish_Crown_PRO3.grpc.EmptyMessage;
-import via.pro3.Danish_Crown_PRO3.grpc.animalListResponse;
-import via.pro3.Danish_Crown_PRO3.grpc.animalrequest;
+import via.pro3.Danish_Crown_PRO3.grpc.*;
 
 public class Danish_Crown_client {
 
@@ -30,6 +27,17 @@ public class Danish_Crown_client {
       System.out.println("Weight: " + animal.getWeight());
       System.out.println("Arrival Date: " + animal.getArrivalDate());
       System.out.println("Status: " + animal.getStatus());
+      System.out.println("-----");
+    }
+
+
+    EmptyMessage request2 = EmptyMessage.getDefaultInstance();
+    productListResponse productListResponse = danishCrownImplBlockingStub.getAllProducts(request2);
+
+    for (productrequest product : productListResponse.getProductsList()) {
+      System.out.println("Product ID: " + product.getProductid());
+      System.out.println("Package Type: " + product.getPackagetype());
+      System.out.println("Aniamal ID: " + product.getAnimal());
       System.out.println("-----");
     }
 
