@@ -57,7 +57,7 @@ public class Danish_Crown_Impl
     {
       List<Product> productsDB = db.getAllProducts();
 
-      // Byg response med listen af dyr
+      // Byg response med listen af products
       productListResponse.Builder responseBuilder = productListResponse.newBuilder();
 
       for (Product product : productsDB)
