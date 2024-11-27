@@ -16,7 +16,7 @@ service Danish_Crown_Impl {
 
 message animalrequest {
     string animalId = 1;
-    string weight = 2;
+    double weight = 2;
     string arrivalDate = 3;
     string status = 4;
 }
@@ -31,23 +31,23 @@ message trayRequest {
     int32 trayID = 1;
     string trayType = 2;
     int32 capacity = 3;
-    int32 weight = 4;
+    double weight = 4;
     repeated partRequest parts = 5; // List of parts in the tray
 }
 
 message partRequest {
     int32 id = 1;
     string partType = 2;
-    animalrequest animal = 3; // Associated animal
+    string animal = 3; // Associated animal
     string weight = 4;
-    trayRequest tray = 5; // Associated tray
+    int32 tray = 5; // Associated tray
 }
 
 message EmptyMessage {}
 
 message animalresponse {
     string animalId = 1;
-    string weight = 2;
+    double weight = 2;
     string arrivalDate = 3;
     string status = 4;
     string message = 5; // Success or error message
@@ -64,7 +64,7 @@ message trayResponse {
     int32 trayID = 1;
     string trayType = 2;
     int32 capacity = 3;
-    int32 weight = 4;
+    double weight = 4;
     repeated partResponse parts = 5; // List of parts
     string message = 6; // Success or error message
 }
@@ -72,9 +72,9 @@ message trayResponse {
 message partResponse {
     int32 id = 1;
     string partType = 2;
-    animalresponse animal = 3; // Associated animal
+    string animal = 3; // Associated animal
     string weight = 4;
-    trayResponse tray = 5; // Associated tray
+    int32 tray = 5; // Associated tray
     string message = 6; // Success or error message
 }
 

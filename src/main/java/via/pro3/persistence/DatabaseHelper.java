@@ -11,7 +11,7 @@ import java.util.List;
 
 
 public class DatabaseHelper {
-  private static final String URL = "jdbc:sqlite:src/main/database/DC.db"; // SQLite database file path
+  private static final String URL = "jdbc:sqlite:src/main/database/DC.db";
 
   public Connection getConnection() {
     try {
@@ -139,19 +139,64 @@ public class DatabaseHelper {
     return parts;
   }
   public void addPart(Part part) {
-    String query = "INSERT INTO Part (partType, weight, animalId, trayId) VALUES (?, ?, ?, ?)";
+    String query = "INSERT INTO Part (partId, partType, weight, animalId, trayId) VALUES (?, ?, ?, ?, ?)";
 
     try (Connection connection = getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-
-      preparedStatement.setString(1, part.getPartType());
-      preparedStatement.setString(2, part.getWieght());
-      preparedStatement.setString(3, part.getAnimalid());
-      preparedStatement.setInt(4, part.getTrayId());
+      preparedStatement.setInt(1,part.getId());
+      preparedStatement.setString(2, part.getPartType());
+      preparedStatement.setString(3, part.getWieght());
+      preparedStatement.setString(4, part.getAnimalid());
+      preparedStatement.setInt(5, part.getTrayId());
       preparedStatement.executeUpdate();
 
     } catch (SQLException e) {
       e.printStackTrace();
+    }
+  }
+
+  public Animal getAnimal(String animalId) {
+    String query = "SELECT * FROM Animal WHERE animalId = ?";
+    try (Connection connection = getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+      preparedStatement.setString(1, animalId);
+      ResultSet resultSet = preparedStatement.executeQuery();
+
+      if (resultSet.next()) {
+        return new Animal(
+            resultSet.getString("animalId"),
+            resultSet.getDouble("weight"),
+            resultSet.getString("arrivalDate"),
+            resultSet.getString("status")
+        );
+      }
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+    return null; // Return null if the animal is not found
+  }
+
+  public void addAnimal(Animal newAnimal)
+  {
+    String query = "INSERT INTO Animal (animalId, weight, arrivalDate, status) VALUES (?, ?, ?, ?)";
+
+    try (Connection connection = getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+      // Set the parameters for the PreparedStatement
+      preparedStatement.setString(1, newAnimal.getAnimalId());  // animalId
+      preparedStatement.setDouble(2, newAnimal.getWeight());    // weight
+      preparedStatement.setString(3, newAnimal.getArrivalDate()); // arrivalDate
+      preparedStatement.setString(4, newAnimal.getStatus());     // status
+
+      // Execute the update (insert the new animal into the database)
+      preparedStatement.executeUpdate();
+      System.out.println("Animal added successfully.");
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+      System.err.println("Error adding animal to the database.");
     }
   }
 }
