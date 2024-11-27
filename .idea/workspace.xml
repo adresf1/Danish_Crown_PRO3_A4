@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="Done pt2" />
+    <list default="true" id="bd688e98-0cbf-4704-95f4-dea35295aa7d" name="Changes" comment="Done pt2">
+      <change afterPath="$PROJECT_DIR$/src/main/database/DC.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Model/Part.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Model/Tray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/Model/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/Model/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/via/pro3/persistence/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/Danish_Crowns.proto" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/sakaadar/Danish_Crown_PRO3.git&quot;,
-    &quot;accountId&quot;: &quot;522aa944-9848-4865-980e-dba50a6a5ad4&quot;
+    &quot;accountId&quot;: &quot;22eb0f03-2908-48cb-8ab2-815136b6364f&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -54,7 +62,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sakaa/IdeaProjects/Danish_Crown_PRO3/src/main/database",
+    "last_opened_file_path": "C:/Users/adres/IdeaProjects/Danish_Crown_PRO3_A4/src/main/database/DC.db",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +72,11 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21724138",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -143,6 +156,24 @@
       <updated>1728564115102</updated>
       <workItem from="1728564116381" duration="4106000" />
       <workItem from="1728572447337" duration="1048000" />
+      <workItem from="1728649255253" duration="2000" />
+      <workItem from="1729527530657" duration="12000" />
+      <workItem from="1729672908918" duration="1411000" />
+      <workItem from="1729893913974" duration="7875000" />
+      <workItem from="1730277388265" duration="7000" />
+      <workItem from="1730277954364" duration="35000" />
+      <workItem from="1730281793233" duration="43000" />
+      <workItem from="1730283333686" duration="3000" />
+      <workItem from="1730283478736" duration="3547000" />
+      <workItem from="1730291023882" duration="1719000" />
+      <workItem from="1730364810089" duration="54000" />
+      <workItem from="1730364954423" duration="1062000" />
+      <workItem from="1730971954135" duration="947000" />
+      <workItem from="1731158901852" duration="2252000" />
+      <workItem from="1732713904994" duration="106000" />
+      <workItem from="1732714245633" duration="60000" />
+      <workItem from="1732714352537" duration="446000" />
+      <workItem from="1732715995262" duration="4613000" />
     </task>
     <task id="LOCAL-00001" summary="Grpc virker med databasen">
       <option name="closed" value="true" />
@@ -181,6 +212,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Grpc virker med databasen" />

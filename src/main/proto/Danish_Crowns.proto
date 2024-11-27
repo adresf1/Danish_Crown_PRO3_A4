@@ -8,43 +8,92 @@ service Danish_Crown_Impl {
     rpc AddAnimal(animalrequest) returns (animalresponse);
     rpc GetAllAnimals(EmptyMessage) returns (animalListResponse);
     rpc GetAllProducts(EmptyMessage) returns (productListResponse);
+    rpc GetAllTrays(EmptyMessage) returns (trayListResponse); // New RPC
+    rpc AddTray(trayRequest) returns (trayResponse); // New RPC
+    rpc GetAllParts(EmptyMessage) returns (partListResponse); // New RPC
+    rpc AddPart(partRequest) returns (partResponse); // New RPC
 }
 
-message animalrequest{
+message animalrequest {
     string animalId = 1;
     string weight = 2;
     string arrivalDate = 3;
     string status = 4;
 }
-message productrequest{
+
+message productrequest {
     string productid = 1;
     string packagetype = 2;
     string animal = 3;
 }
-message EmptyMessage {
 
+message trayRequest {
+    int32 trayID = 1;
+    string trayType = 2;
+    int32 capacity = 3;
+    int32 weight = 4;
+    repeated partRequest parts = 5; // List of parts in the tray
 }
+
+message partRequest {
+    int32 id = 1;
+    string partType = 2;
+    animalrequest animal = 3; // Associated animal
+    string weight = 4;
+    trayRequest tray = 5; // Associated tray
+}
+
+message EmptyMessage {}
 
 message animalresponse {
     string animalId = 1;
     string weight = 2;
     string arrivalDate = 3;
     string status = 4;
-    string message = 5; // Besked som kan indikere succes eller fejl
+    string message = 5; // Success or error message
 }
 
-message productsresponse{
+message productsresponse {
     string productid = 1;
     string packagetype = 2;
     string animal = 3;
-    string message = 5; // Besked som kan indikere succes eller fejl
+    string message = 5; // Success or error message
+}
+
+message trayResponse {
+    int32 trayID = 1;
+    string trayType = 2;
+    int32 capacity = 3;
+    int32 weight = 4;
+    repeated partResponse parts = 5; // List of parts
+    string message = 6; // Success or error message
+}
+
+message partResponse {
+    int32 id = 1;
+    string partType = 2;
+    animalresponse animal = 3; // Associated animal
+    string weight = 4;
+    trayResponse tray = 5; // Associated tray
+    string message = 6; // Success or error message
 }
 
 message animalListResponse {
-    repeated animalrequest animals = 1; // 'repeated' bruges til at definere en liste
-    string message = 2; // Ekstra statusbesked
+    repeated animalrequest animals = 1; // List of animals
+    string message = 2; // Extra status message
 }
 
 message productListResponse {
-    repeated productrequest products = 1;
+    repeated productrequest products = 1; // List of products
+    string message = 2; // Extra status message
+}
+
+message trayListResponse {
+    repeated trayRequest trays = 1; // List of trays
+    string message = 2; // Extra status message
+}
+
+message partListResponse {
+    repeated partRequest parts = 1; // List of parts
+    string message = 2; // Extra status message
 }
